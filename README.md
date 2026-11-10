@@ -1,47 +1,36 @@
 # Student Manager
 
-A simple Java application that manages student records using PostgreSQL and JDBC.
+A Java training project demonstrating two approaches to building a Student Management application.
 
-## Technologies
-- Java 21
-- PostgreSQL
-- JDBC
-- mvn
+## Project Versions
 
-##Project Versions
-
-### 1. Spring Boot REST API (main)
+### 1. Spring Boot REST API (`main`)
 - Java 21
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
 - Maven
 
-### 2. Plain Java + JDBC (task1)
+### 2. Plain Java + JDBC (`task-1`)
 - Java
 - JDBC
 - PostgreSQL
 
+## REST API Endpoints
 
-## Database Setup
-1. Create a PostgreSQL database named `training_db`.
-2. Run the SQL commands in `database/database.sql`.
+Base URL: `/api/students`
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/students` | Get all students |
+| GET | `/api/students/{id}` | Get student by ID |
+| POST | `/api/students` | Create a student |
+| PUT | `/api/students/{id}` | Update a student |
+| DELETE | `/api/students/{id}` | Delete a student |
 
 ## Database Configuration
-Update the database username and password in `DatabaseConnection.java`.
 
-## CRUD Operations
-- Create a student
-- Get all students
-- Update a student
-- Delete a student
-
-## How to Run
-1. Open the project in IntelliJ IDEA.
-2. Make sure Java 21 is configured.
-3. Make sure PostgreSQL is running.
-4. Run `Main.java`.
-
+The application connects to a PostgreSQL database named `training_db`.
 
 ## Running the Application
 
